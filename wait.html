@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandGadgets</title>
+    <link rel="stylesheet" href="./css/wait.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+        <div class="wait_nav-container">
+            <a href="home.html"><img src="./images/Logo@3x.png" alt="Logo" class="image"></a>
+            <div class="number_flex">
+                <i class="ri-phone-line"></i>
+                <p>+234 809 537 8070</p>
+            </div>
+            
+        </div>  
+</div>
+<div class="wait_hero">
+    <div class="countdown_container">
+        <p class="countdown" id="days"></p>
+        <p class="countdown" id="hours"></p>
+        <p class="countdown" id="mins"></p>
+        <p class="countdown" id="secs"></p>
+        <h2 class="countdown" id="end"></h2>
+    </div>
+    <div class="wait_flex">
+        <div class="hero1">
+            <div class="hero1_container">
+                <h2 class="wait_header">
+                    We are launching soon!
+                </h2>
+                <p class="wait_para">Join our waiting list for notification of an exclusive early-bird offer when 
+                    <span class="wait_link"><a href="#">BrandGadgets.ng</a></span> goes live.
+                </p>
+                <form class="wait_form" id="wait_form">
+                    <h5 class="form_header">Drop your email address below</h5>
+                    <div class="wait_container">
+                        <div class="input_flex">
+                            <input type="email" placeholder="your email here" id="email" onclick="removeMsg()"/>
+                            <button type="submit" class="button" id="btnsubmit">Notify Me</button><br>
+                        </div>
+                        <div>
+                            <p class="msg">Field cannot be empty!</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- <div class="modal" id="myModal">
+                    <div class="congrats" id="congrats">
+                        <p class="hurray">🎉  You are in!</p> 
+                        <button class="close" onclick="removeMsg()" id="myBtn"><i class="ri-close-circle-line"></i></button>
+                    </div>
+                    <p class="message">You are officially on our waiting list now. You will get our message soon</p>
+                </div> -->
+                <div class="accepted" id="accepted">
+                    <div class="background">
+                        <div class="congrats" id="congrats">
+                            <p class="hurray">🎉  You are in!</p> 
+                            <button class="close" id="close" onclick="removeMsg()"><i class="ri-close-circle-line"></i></button>
+                        </div>
+                        <p class="message">You are officially on our waiting list now. You will get our message soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero3">
+            <img src="./images/Group-134.png" alt="image" class="laptop_image">
+        </div>
+       <div class="hero2">
+           <img src="./images/laptop-image.svg" alt="image" class="laptop_image">
+       </div>
+    </div>
+</div>
+
+<script>
+    
+    var countDownDate = new Date("September 17, 2021").getTime();
+
+    // Run myfunc every second
+    var myfunc = setInterval(function() {
+
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+        
+    // Calculating the days, hours, minutes and seconds left
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+        
+    // Result is output to the specific element
+    document.getElementById("days").innerHTML = days + " Days "
+    document.getElementById("hours").innerHTML = hours + " Hrs " 
+    document.getElementById("mins").innerHTML = minutes + " Mins " 
+    document.getElementById("secs").innerHTML = seconds + " Secs " 
+        
+    // Display the message when countdown is over
+    if (timeleft < 0) {
+        clearInterval(myfunc);
+        document.getElementById("days").innerHTML = ""
+        document.getElementById("hours").innerHTML = "" 
+        document.getElementById("mins").innerHTML = ""
+        document.getElementById("secs").innerHTML = ""
+        document.getElementById("end").innerHTML = "We Are Live!";
+    }
+    }, 1000);
+
+    const message = document.getElementById('accepted'),
+        submit = document.getElementById('btnsubmit'),
+        email = document.getElementById('email'),
+        close = document.getElementById('close'),
+        msg = document.querySelector(".msg"),
+        form = document.getElementById("wait_form")
+
+        submit.addEventListener('click', onClick);
+        close.addEventListener('click', onClick2);
+
+        function onClick(e) {
+            e.preventDefault();
+           
+            checkInputs();
+        };
+        function checkInputs() {
+            const emailValue = email.value.trim();
+
+            if(emailValue === '') {
+                msg.style.display = "block";
+                message.classList.remove('show_message')
+            } else if(!isEmail(emailValue)) {
+                msg.style.display = "block";
+                msg.textContent = "Email is not valid!";
+                form.reset();
+                message.classList.remove('show_message')
+            } else {
+                message.classList.add('show_message');
+                form.reset();
+            }
+        }
+        
+        function isEmail(email) {
+            return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+        }
+
+        function onClick2() {
+            if(close) {
+                message.classList.remove('show_message')
+            }
+        } 
+        function removeMsg () {
+            msg.style.display = "none";
+            message.classList.remove('show_message')
+        }
+</script>
+</body>
+</html>

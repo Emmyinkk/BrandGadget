@@ -1,0 +1,131 @@
+@media only screen and (min-width: 320px) {
+    .shop_container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 6em;
+    }
+    .shop-hero_flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .shopping {
+        margin-bottom: 1em;
+    }
+    .shopping_header {
+        border-bottom: 1px solid #ecf3fc;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 1em;
+        margin-top: -1.6em;
+        margin-left: -1em;
+        margin-right: -1em;
+        margin-bottom: 24px;
+    }
+    .shopping_flex1 {
+        width: 100%;
+        border: 1px solid #ecf3fc;
+        border-radius: .5em;
+        margin-bottom: 2em;
+    }
+    .shop_div {
+        width: 100%;
+    }
+    .shopping_form {
+        padding: 16px;
+        border: 1px solid #ecf3fc; 
+        border-radius: .5em;
+        margin-bottom: 2em;
+    }
+    .shopping_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .shopping_form2 {
+        padding: 16px;
+        border: 1px solid #ecf3fc; 
+        border-radius: .5em;
+        margin-bottom: 94px;
+    }
+    .cloth1 {
+        width: 72px;
+        height: 72px;
+        background: #E2E7EE;
+        border-radius: .5em 0em 0em .5em;
+        margin-bottom: 0em;
+        vertical-align: middle;
+        margin-right: 1em;
+    }
+    .shopping_para {
+        display: inline;
+    }
+    .total_amount {
+        display: flex;
+        justify-content: space-between;
+    }
+    .payment_submit {
+        text-align: center;
+        padding: 12px 16px;
+        background: #D2F9F7;
+        border-radius: 8px; 
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #12625A;
+        border: none;
+        margin: 0px 0px 24px 0px;
+    }
+    .middle {
+      text-align: center;
+    }
+    .middle button {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .right_nav2 {
+        display: block;
+    }
+    .shopping_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 16px;
+    }
+    .shopping_form, .shopping_form2 {
+        width: 80%;
+    }
+    .total_amount {
+        display: flex;
+        float: right;
+        gap: 2em;
+        margin-bottom: 16px;
+    }
+    .payment_submit {
+        text-align: center;
+        padding: 12px 16px;
+        background: #D2F9F7;
+        border-radius: 8px; 
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #12625A;
+        border: none;
+        margin-top: 64px;
+        margin-right: 0em;
+    }
+    .middle button {
+        width: 70%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .shop_container {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 6em;
+    }
+}

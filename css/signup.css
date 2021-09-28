@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Ubuntu;
+}
+
+a {
+    text-decoration: none;
+    color: #FA7E0A;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 12px 64px;
+}
+
+.nav p {
+    font-size: 30px;
+    margin-left: 3em;
+    line-height: .6em;
+    color: #42556D
+}
+
+/* .ontop_image {
+    position: absolute;
+    color: black;
+    left: 14em;
+    top: 21.3em;
+    width: 8%;
+} */
+
+.below {
+    margin-left: 1.3em;
+    font-weight: 50px;;
+}
+
+/* .image {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 600px;
+    padding-right: 5em;
+    object-fit: contain;
+} */
+/* .inside_image {
+    position: absolute;
+    top: 10em;
+    left: 11em; 
+    width: 20%;
+} */
+
+.container {
+    display: flex;
+    flex: 1;
+    margin-top: 0em;
+}
+
+.container2 {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    margin-top: 3em;
+    color: #252F3C;
+}
+
+.header {
+    padding: 15px 40px;
+    font-size: 14px;
+    margin-bottom: -2em;
+   
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.fpass {
+    display: inline;
+    font-size: 10px;
+}
+
+.form {
+    padding: 30px 40px;
+    font-size: 12px;
+}
+
+.form_control {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form_control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form_control input {
+    background: #F7F8FD;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 5px;
+    width: 80%;
+}
+
+.form button {
+    background-color: #26CAC1;
+    border: 2px solid #26CAC1;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 5px;
+    width: 85%;
+}
+
+@media only screen and (min-width: 320px) {
+
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        margin: 0 auto;
+    }
+
+    .nav {
+        margin-bottom: -5em;
+        text-align: center;
+    }
+    .image {  
+        width: 130px;
+        height: 50px;
+    }
+    .images {
+        display: none;
+    }
+
+    .form {
+        padding: 30px 40px;
+        font-size: 12px;
+    }
+    .header {
+        padding: 15px 16px;
+        font-size: 14px;
+        margin-bottom: -2em;
+       
+    }
+
+    .header p {
+        font-size: 11px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url("./images/Overlay-2.png");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position-y: 2.5em;
+    }
+    .container2 {
+        background-color: #fff;
+        width: 80%;
+        border-bottom: .5em;
+    }
+    .form {
+        padding: 30px 16px;
+        font-size: 12px;
+    }
+
+    .form_control input {
+        background: #F7F8FD;
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        font-size: 14px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .form button {
+        background-color: #26CAC1;
+        border: 2px solid #26CAC1;
+        border-radius: 4px;
+        color: #fff;
+        display: block;
+        font-family: inherit;
+        font-size: 16px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .fpass {
+        display: block;
+        text-align: right;
+        font-size: 10px;
+        margin-top: -1.5em;
+        margin-bottom: .5em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    /* .nav {
+        margin-bottom: 3em;
+    } */
+
+    .nav {
+        text-align: left;
+    }
+
+    .images {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        background-image: none;
+    }
+    .container2 {
+        width: 90%;
+    }
+
+    /* .images {
+        display: inline-block;
+        margin-left: 3em;
+        margin-top: 3em;
+        z-index: 2;
+    } */
+
+    .inside_image {
+        margin-top: 3em;
+        display: block;
+        width: 100%;
+        height: 1%;
+    }
+    /* .ontop_image {
+        position: absolute;
+        display: block;
+        color: black;
+        left: 7.5em;
+        top: 26em;
+        width: 10%;
+        height: 150px;
+        object-fit: contain;
+    } */
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .form {
+        padding: 32px 70px;
+    }
+    .header {
+        padding: 15px 70px;
+    }
+    .container2 {
+        width: 60%;
+        padding: 0px 100px;
+    }
+    .inside_image {
+        margin-top: 0em;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,334 @@
+ .container, .container1 {
+    width: 90%;
+}
+.checkout_container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6em;
+}
+.request_form-checkout {
+    border: 1px solid #ecf3fc; 
+    padding: 24px;
+    border-radius: .5em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.text label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D1F2D;
+}
+@media only screen and (min-width: 320px) {
+    .form_flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .form_flex3 input[type=text], 
+.form_flex3 input[type=email],
+.form_flex3 input[type=tel],
+.form_flex3 input[type=number] {
+    background: #F7F8FD;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px;
+    margin-right: 0;
+    width: 100%;
+}
+    .hero_flex2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        gap: 2em;
+    }
+    textarea {
+        width: 80%;
+    }
+    .form_header2 {
+        border-bottom: 1px solid #ecf3fc;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 1em;
+        margin-top: -1em;
+        margin-left: -1em;
+        margin-right: -1em;
+        margin-bottom: 24px;
+    }
+    .total_price {
+        background: #F7F8FD;
+        padding: 24px 24px 10px 24px;
+        margin-right: -1em;
+        margin-left: -1em;
+        margin-bottom: -1em;
+    }
+    .Payment_method {
+        display: flex;
+        margin-bottom: 3em;
+    }
+    /* The container */
+.radio_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio_container:hover input ~ .checkmark {
+    background-color: #F7F8FD;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radio_container input:checked ~ .checkmark {
+    background-color: #FD9941;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio_container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+    .Payment_method p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #252F3C;
+    }
+    .extended {
+        width: 100%;
+        margin-right: -4em;
+    }
+    .right_side_flex {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    .request_form {
+        border-radius: .5em;
+        margin-bottom: 2em;
+    }
+
+    .checkbox_round {
+        margin-top: 1.2em;
+    }
+    .pickup {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #252F3C;
+    }
+    .price-div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -1em;
+    }
+    .child_price-div {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #42556D;
+    }
+    .your_order {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #252F3C;
+    }
+    .right_side {
+        width: 100%;
+        margin-right: -2em;
+        border-radius: .5em;
+    }
+    textarea {
+        width: 100%;
+    }
+    .form_header2 {
+        border-bottom: 1px solid #ecf3fc;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 1em;
+        margin-top: -1em;
+        margin-left: -1em;
+        margin-right: -1em;
+        margin-bottom: 24px;
+    }
+    .total_price {
+        background: #F7F8FD;
+        padding: 24px 24px 10px 24px;
+        margin-right: -1em;
+        margin-left: -1em;
+        margin-bottom: -1em;
+    }
+    
+}
+@media only screen and (min-width: 768px) {
+    .Payment_method {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1;
+    }
+    .checkbox_round2 {
+        width: 1em;
+        height: 1em;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .checkout_container {
+        width: 100%;
+    }
+    .request_form {
+        margin-bottom: 32px;
+    }
+    /* .hero span {
+        border: none;
+    } */
+    .hero_flex2 {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin: 0 auto;
+        gap: 5em;
+    }
+    .form_flex3 input[type=text], 
+    .form_flex3 input[type=email],
+    .form_flex3 input[type=tel],
+    .form_flex3 input[type=number] {
+        width: 100%;
+    }
+    .form_flex3 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 2em;
+        margin: 0 auto;
+    }
+    .Payment_method {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1;
+    }
+    .Payment_method p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #252F3C;
+        width: 100%;
+    }
+    .extended {
+        width: 65%;
+    }
+    .right_side_flex {
+        width: 100%;
+    }
+    .request_form {
+        border-radius: .5em;
+    }
+    .checkbox_round {
+        margin-top: 1.2em;
+    }
+    .form_flex2 {
+        justify-content: space-between;
+    }
+    .pickup {
+        font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252F3C;
+    }
+    .price-div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -1em;
+    }
+    .child_price-div {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #42556D;
+    }
+    .your_order {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #252F3C;
+    }
+    .right_side {
+        width: 40%;
+        margin: 0 auto;
+        border-radius: .5em;
+    }
+    textarea {
+        width: 80%;
+    }
+    .form_header2 {
+        border-bottom: 1px solid #ecf3fc;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 1em;
+        margin-top: -1em;
+        margin-left: -1em;
+        margin-right: -1em;
+        margin-bottom: 24px;
+    }
+    .total_price {
+        background: #F7F8FD;
+        padding: 24px 24px 10px 24px;
+        margin-right: -1em;
+        margin-left: -1em;
+        margin-bottom: -1em;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .checkout_container {
+        width: 100%;
+    }
+}

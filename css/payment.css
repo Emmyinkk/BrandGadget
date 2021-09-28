@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: rgb(230, 229, 229);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.form_container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 312px;
+    height: 344px;
+    max-width: 100%;
+    padding: 10px 24px;
+    margin: 0 auto;
+}
+.form_header5 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    color: #252F3C;
+    margin: 24px 0px;
+}
+.card_width {
+    width: 95%;
+    background: #F7F8FD;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+.parent_form-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252F3C;
+}
+
+.sub_child-form {
+    display: flex;
+    justify-content: center;
+}
+.cvv {
+    width: 90%;
+    background: #F7F8FD;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+.payment_submit {
+    text-align: center;
+    padding: 12px 16px;
+    background: #26CAC1;
+    border-radius: 8px; 
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #252F3C;
+    border: none;
+    margin: 0px 0px 24px 0px;
+}
+.middle {
+  text-align: center;
+}
+button {
+    width: 100%;
+}

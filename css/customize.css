@@ -1,0 +1,205 @@
+@media only screen and (min-width: 320px) {
+    .product_slide3 {
+        display: flex;
+        justify-content: space-between;
+        gap: .5em;
+        margin-bottom: 36px;
+    }
+    .product_slide4 {
+        display: none;
+    }
+    .slide_label {
+        border: 1px solid #E2E7EE;
+        border-radius: .5em;
+        width: 100%;
+        height: auto;
+        background: #F7F8FD;
+    }
+    .slide_label img {
+        border-radius: 0em;
+        width: 100%;
+        height: auto;
+        border-radius: .5em .5em 0 0;
+    }
+    .label {
+        text-align: center;
+    }
+    .header_arrow {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ecf3fc;
+        padding-left: 16px;
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+    .down_arrow {
+        margin-top: 1.5em;
+        color: #AEB4B9;
+        margin-right: 16px;
+    }
+    .update {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #42556D;
+    }
+    .upper {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #42556D;
+    }
+    .upper a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #12625A;
+    }
+    .terms {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #252F3C;
+    }
+    .agree {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #252F3C;
+        margin-bottom: 24px;
+    }
+    .normal_checkbox {
+        width: 1.3em;
+        height: 1.3em;
+        background-color: white;
+        vertical-align: middle;
+        border: 1px solid #FD9941;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: 20.02px;
+    }
+    .dimension_size {
+        color: #42556D;
+    }
+    .width, .height {
+        color: #252F3C;
+    }
+    .measure {
+        padding: 12px;
+        background: #F7F8FD;
+        border: 0.5px solid #CFD2D5;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    .position_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex_left {
+        width: 80px;
+        height: 80px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #252F3C;
+        background: #FFFFFF;
+        border: 1px solid #E2E7EE;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    .position_flex1,
+    .position_flex2, .position_flex3 {
+        text-align: center;
+    }
+    .flex_left {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product_hero {
+        margin-top: 16em;
+    }
+    .checkbox_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .coloring {
+        display: block;
+    }
+    .product_flex {
+        max-height: 1000%;
+        margin-bottom: 2em;
+    }
+    .slide_flex1{
+        width: 100%;
+    }
+    .measure1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1em;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product_hero {
+        margin-top: 6em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .slide_label {
+        border: 1px solid #E2E7EE;
+        border-radius: .5em;
+        width: 100%;
+        height: auto;
+        background: #F7F8FD;
+    }
+    .slide_label img {
+        border-radius: 0em;
+        width: 100%;
+        height: auto;
+        border-radius: .5em .5em 0 0;
+    }
+    .product_cloth {
+        width: 50%;
+        background: #E2E7EE;
+        margin-bottom: 16px;
+        border-radius: .5em;
+        text-align: center;
+    }
+    .product_slide3 {
+        display: flex;
+        justify-content: space-between;
+        gap: .5em;
+        margin-bottom: 36px;
+        width: 100%;
+    }
+    /* .slide_label {
+        width: 150px;
+    }
+    .slide_label img {
+        width: 148px;
+    } */
+    .slide_flex1{
+        width: 47%;
+    }
+    .slide_flex2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .alternative1 {
+        display: block;
+    }
+    .div {
+        display: flex;
+    }
+    .measure1 {
+        flex-wrap: nowrap;
+        overflow: auto;
+        white-space: nowrap;
+        width: 100%;
+    }
+}

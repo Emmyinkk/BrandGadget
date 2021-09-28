@@ -1,0 +1,206 @@
+@media only screen and (min-width: 320px) {
+    .search_container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .help_container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .search_buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 32px;
+    }
+    .button1 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #12625A;
+        padding: 12px 16px;
+        border: none;
+        background: #FFFFFF;
+        border-radius: 8px;
+        background: none;
+    }
+    .search_header h3 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        color: #42556D;
+    }
+    .search_card {
+        border: 1px solid #E2E7EE;
+        border-radius: 8px;
+        margin-bottom: 2em;
+    }
+    .search_card-flex {
+        display: flex;
+        justify-content: space-between;
+        gap: .5em;
+    }
+    .search_text {
+        padding: 16px;
+    }
+    .search_image {
+        width: 100%;
+        height: auto;
+        background: #E2E7EE;
+    }
+    .search_name {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #42556D;
+    }
+    .search_price {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #42556D;
+    }
+    .search_amount {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #99ABC1;
+    }
+    .inputs input[type=number], .reduce {
+        width: 20%;
+        margin: 0 auto;
+        padding: 12px 13px;
+        text-align: center;
+        background: #FFFFFF;
+        border: 0.5px solid #CFD2D5;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    .reduce i {
+        color: #FD9941;
+    }
+    .cart_pill {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+        color: #252F3C;
+        background: #26CAC1;
+        border-radius: 8px;
+        padding: 12px;
+        text-align: center;
+        width: 100%;
+    }
+    .inputs {
+        margin-top: 1em;
+    }
+    .inputs i {
+        margin-left: -.4em;
+    }
+    .part1, .part2, 
+    .part3, .part4 {
+        display: none;
+    }
+    .popup_heading h6{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .search_checkbox {
+        width: 1em;
+        height: 1em;
+        background-color: white;
+        vertical-align: middle;
+        border: 1px solid #FD9941;
+        -webkit-appearance: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    .sort_text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: -.1em;
+    }
+    .checkbox_flex {
+        display: flex;
+        gap: .5em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .search_container {
+        margin-top: 6em;
+    }
+    .help_container {
+        margin-top: 6em;
+    }
+    .search_flex {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .search_card {
+        width: 47%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+    .search_child-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: .1em;
+    }
+    .search_result-popup {
+        display: block;
+        width: 150%;
+        border: 1px solid #E2E7EE;
+        padding: 16px;
+        border-radius: .5em;
+        max-height: 1000px;
+    }
+    .search_buttons {
+        display: none;
+    }
+    .part1, .part2, 
+    .part3, .part4 {
+        display: block;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .search_flex {
+        gap: .5em;
+    }
+    .search_card {
+        width: 33%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+    .search_child-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+    }
+    .search_result-popup {
+        display: block;
+        width: 105%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .search_header {
+        margin-top: 6em;
+    }
+    .search_container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .help_container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .search_result-popup {
+        display: block;
+        width: 70%;
+    }
+}
