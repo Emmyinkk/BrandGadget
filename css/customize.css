@@ -1,4 +1,28 @@
 @media only screen and (min-width: 320px) {
+    .container_middle {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+    input[type=search] {
+        margin-top: -1em;
+    }
+    .nav2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        /* box-shadow: 0 2px 5px rgb(0 0 0 / 30%); */
+        margin-bottom: 1.5em;
+    }
+    .search_button {
+        margin-top: -.4em;
+    }
+    .icon {
+        margin-top: -.5em;
+    }
+    .container_middle {
+        padding-top: 0em;
+    }
     .product_slide3 {
         display: flex;
         justify-content: space-between;
@@ -118,16 +142,24 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .product_hero {
-        margin-top: 16em;
+    .hero {
+        width: 100%;
+        margin: 0 auto;
     }
     .checkbox_flex {
         display: flex;
-        justify-content: space-between;
+        gap: 1em;
         flex-wrap: wrap;
     }
     .coloring {
         display: block;
+        border: 1px solid #E2E7EE;
+        padding: 1em;
+        margin-top: -.01em;
+        margin-bottom: 1em;
+    }
+    .coloring {
+        margin: 24px 0px 24px 24px;
     }
     .product_flex {
         max-height: 1000%;
@@ -135,6 +167,10 @@
     }
     .slide_flex1{
         width: 100%;
+    }
+    .slide_flex2 {
+        border: none;
+        max-height: 10000px;
     }
     .measure1 {
         display: flex;
@@ -145,11 +181,20 @@
         margin: 0 auto;
     }
     .product_hero {
+        width: 90%;
         margin-top: 6em;
     }
 }
 
 @media only screen and (min-width: 1024px) {
+    .checkbox_flex {
+        display: flex;
+        gap: 5em;
+        flex-wrap: wrap;
+    }
+    .hero {
+        width: 100%;
+    }
     .slide_label {
         border: 1px solid #E2E7EE;
         border-radius: .5em;
@@ -163,8 +208,12 @@
         height: auto;
         border-radius: .5em .5em 0 0;
     }
+    .flex_left {
+        width: 192px;
+        height: 56px; 
+    }
     .product_cloth {
-        width: 50%;
+        width: 100%;
         background: #E2E7EE;
         margin-bottom: 16px;
         border-radius: .5em;
@@ -187,6 +236,11 @@
         width: 47%;
     }
     .slide_flex2 {
+        border: none;
+        border-radius: .5em;
+        max-height: 10000px;
+    }
+    .slide_flex2 {
         width: 100%;
         margin: 0 auto;
     }
@@ -201,5 +255,11 @@
         overflow: auto;
         white-space: nowrap;
         width: 100%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .product_hero {
+        width: 80%;
+        margin: 0 auto;
     }
 }

@@ -26,6 +26,7 @@
     .design {
         background: #E2E7EE;
         border-radius: .5em;
+        width: 123px;
     }
     .product_info {
         color: #42556D;
@@ -66,8 +67,8 @@
         margin-bottom: 24px;
     }
     .coloring {
-        border: 1px solid #E2E7EE;
-        padding: 24px;
+        /* border: 1px solid #E2E7EE;
+        padding: 24px; */
         margin-bottom: 16px;
          border-radius: .5em;
     }
@@ -128,7 +129,12 @@
         margin-right: 12px;
         margin-bottom: 12px;
     }
+    .meter_size:focus,
+    .meter_sizem:focus{
+        background: #E2E7EE;
+    }
     .meter_sizem {
+        background-color: transparent;
         text-align: center;
         width: 118px;
         font-weight: 600;
@@ -175,7 +181,7 @@
     }
     .cart_customize {
         display: flex;
-        justify-content: space-between;
+        gap: 1em;
         margin-bottom: 23px;
     }
     .cart_customize a {
@@ -224,7 +230,11 @@
 
 @media only screen and (min-width: 768px) {
     .product_hero {
+        width: 95%;
         margin-top: 6em;
+    }
+    .container_middle {
+        padding-top: .6em;
     }
     .product_flex {
         display: flex;
@@ -262,18 +272,25 @@
         margin-top: 24px;
     }
     .cart_customize {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
+        margin-top: 2em;
     }
 }
 
 @media only screen and (min-width: 1024px){
+    .right {
+        margin-top: 0em;    
+    }
     .product_hero {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
     .product_hero {
         margin-top: 6em;
+    }
+    .design {
+        width: 140px;
     }
     .meter_flex {
         display: flex;
@@ -288,7 +305,7 @@
         margin: 0 auto;
     }
     .slide_flex2 {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
     }
     .alternative2 {
@@ -299,21 +316,25 @@
     }
     .alter_flex {
         display: flex;
-        overflow: auto;
         white-space: nowrap;
         width: 100%;
     }
     .alter_flex p {
         margin-right: 36px;
     }
-    .cart_customize {
-        display: flex;
-        flex: 1;
-        margin-bottom: 23px;
-    }
 }
 @media only screen and (min-width: 1440px) {
+    .right {
+        margin-top: -1.8em;
+    }
     .product_hero {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .product_hero {
+        margin-top: 5em;
+    }
+    .hero {
         width: 90%;
         margin: 0 auto;
     }

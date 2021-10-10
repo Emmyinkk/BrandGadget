@@ -4,7 +4,7 @@
         margin: 0 auto;
     }
     .help_container {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
     .search_buttons {
@@ -157,7 +157,7 @@
         border: 1px solid #E2E7EE;
         padding: 16px;
         border-radius: .5em;
-        max-height: 1000px;
+        max-height: 1100px;
     }
     .search_buttons {
         display: none;

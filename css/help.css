@@ -117,36 +117,13 @@
         color: #FA7E0A;
     }
     
-    /* .color_arrow {
-        color: #FA7E0A;
-        background: #FEE5CD;
-        border-radius: 8px;
-        padding: 0px 14px;
-        margin: 4em 1em; 
-        border: none;
-    } */
 }
 
 @media only screen and (min-width: 1024px) {
-    /* .color_arrow {
-        color: #FA7E0A;
-        background: #FEE5CD;
-        border-radius: 8px;
-        padding: 0px 14px;
-        margin: 2.7em 1em; 
-        border: none;
-    } */
+
 }
 @media only screen and (min-width: 1440px) {
     .help_header {
         margin-top: 5em;
     }
-    /* .color_arrow {
-        color: #FA7E0A;
-        background: #FEE5CD;
-        border-radius: 8px;
-        padding: 0px 14px;
-        margin: 1.7em 1em; 
-        border: none;
-    } */
 }

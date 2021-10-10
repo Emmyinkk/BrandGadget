@@ -4,7 +4,7 @@
 .checkout_container {
     width: 90%;
     margin: 0 auto;
-    margin-top: 6em;
+    margin-top: 1.5em;
 }
 .request_form-checkout {
     border: 1px solid #ecf3fc; 
@@ -20,6 +20,22 @@
     color: #0D1F2D;
 }
 @media only screen and (min-width: 320px) {
+    input[type=search] {
+        margin-top: -1em;
+    }
+    .nav2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        /* box-shadow: 0 2px 5px rgb(0 0 0 / 30%); */
+        margin-bottom: 1.5em;
+    }
+    .search_button {
+        margin-top: -.4em;
+    }
+    .icon {
+        margin-top: -.5em;
+    }
     .form_flex {
         display: flex;
         flex-direction: column;
